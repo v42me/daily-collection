@@ -9,12 +9,12 @@ res = requests.get(website)
 soup = BeautifulSoup(res.content)
 # print res.content
 res = soup.find(class_="content")
-# print res
-# for i in res.select("a")[-4:]:
-# #get name
-# print i.text,i["href"]
-# for j in res.find_all(class_="price"):
-# #kindle price
-#     print j.text
-# for k in res.select("img"):
-#     print k.src
+#print res
+for i in res.select("a")[-4:]:
+#get name
+	print i.text,i["href"]
+for j in res.find_all(class_="price"):
+#kindle price
+    print j.text
+for k in res.select("img"):
+    print k.src

@@ -21,10 +21,9 @@
 <table class="table table-bordered">
     {% for item in items %}
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td><a href="{{ item.bookhref }}"> {{ item.bookname }} </a></td>
+        <td>{{ item.bookprice }}</td>
+        <td><img src="{{ item.bookimage }}"></td>
     </tr>
     {% endfor %}
 </table>

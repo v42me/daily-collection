@@ -2,8 +2,6 @@ __author__ = 'oliverhuang'
 import requests
 from bs4 import BeautifulSoup
 
-
-
 def getData():
     items = list()
     website = "http://www.amazon.cn/gp/feature.html/ref=sa_menu_kindle_l3_f126758?ie=UTF8&docId=126758"

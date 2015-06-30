@@ -6,8 +6,8 @@ from flask import render_template
 @app.route("/book")
 def book():
     items = getData()
-    return render_template('index.html',items = items)
+    return render_template("book.html",items = items)
 
-@app.route("/hello")
+@app.route("/")
 def hello():
-    return "hello"
+    return render_template("index.html")
